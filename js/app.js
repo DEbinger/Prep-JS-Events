@@ -28,10 +28,10 @@ window.onload = function (){
 
 var firstQuote = "Our lives are defined by opportunities; even the ones we miss.";
 
-_________.getElementById(________).addEventListener(______, sayQuote);
+document.getElementById('Benjamin').addEventListener('click', sayQuote);
 
 function sayQuote(){
-  document._________(_______).__________ = __________;
+  document.getElementById('lines').innerHTML = "It's all about the Benjamins";
 }
 
 
