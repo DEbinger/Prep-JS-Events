@@ -5,7 +5,7 @@
 
  /*Exercise 2. change the font color to red*/
   function colorMeBadd(){
-    document.getElementById(_______).style.color = 'red'; 
+    document.getElementById("two").style.color = 'red'; 
   }
 
 /*Exercise 3. fill in the spaces to make this function operate:*/
