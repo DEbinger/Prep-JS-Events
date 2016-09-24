@@ -31,14 +31,17 @@ var firstQuote = "Our lives are defined by opportunities; even the ones we miss.
 document.getElementById('Benjamin').addEventListener('click', sayQuote);
 
 function sayQuote(){
-  document.getElementById('lines').innerHTML = "It's all about the Benjamins";
+  document.getElementById('lines').innerHTML = firstQuote;
 }
 
 
 /*Exercise 6. Add another event listener to the image below that will display an inspirational quote after it is clicked</p>*/
 
+document.getElementById('khaled').addEventListener('click', exerciseSeven);
 
-
+function exerciseSeven(){
+  document.getElementById('wedabest').innerHTML = "Another One, Another One, and Another One";
+}
 
 /*Exercise 7.  Generate a random quote from clicking on a button*/
 var quotes = ["It's a funny thing about comin' home. Looks the same, smells the same, feels the same. You'll realize what's changed is you.", "Momma? Momma? Some days, I feel different than the day before.", "Some people, were born to sit by a river. Some get struck by lightning. Some have an ear for music. Some are artists. Some swim. Some know buttons. Some know Shakespeare. Some are mothers. And some people, dance.", "For what it's worth, it's never too late to be whoever you want to be."];
