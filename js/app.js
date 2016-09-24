@@ -16,7 +16,7 @@
 /*Exercise 4.  Instruct the following function to display the message "My name is Lee, Brrruuuce Lee!" in a new paragraph element after the button is clicked.*/
 
   function kungfu(){
-    ________.getElementById(________).________ = "My name is Lee, Brrruuuce Lee!";
+    document.getElementById("four").innerHTML = "My name is Lee, Brrruuuce Lee!";
   }
 
 
