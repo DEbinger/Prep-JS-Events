@@ -55,6 +55,16 @@ function exerciseSeven(){
                                                    
 /*Exercise 8. Create an event listener that will show and hide the message when clicking on the button.*/
 
+var money = document.getElementById('hideandseek');money.addEventListener("click", makeMoney);
+
+function makeMoney(){
+  var showMeDaMoney = document.getElementById("showmoney");
+  if(showMeDaMoney.style.display === "none"){
+    showMeDaMoney.style.display = "block";
+  }else{
+    showMeDaMoney.style.display = "none";
+  }
+}
 
 
 /*Final Boss:
