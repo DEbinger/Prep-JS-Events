@@ -74,6 +74,45 @@ Make a visual list of the items in the orders array. When clicking on the produc
 var orders = [{product: "Finger Toothbrush", price: 9.99}, {product: "Barry Manilow's Greatest Hits Collection Vol 1", price: 500.01}, {product: "Goldfish Aquairum Phone Booth", price: 199.99}, {product: "Woof Washer 360", price: 9.99}, {product: "Sauna Pants", price: 39.95}, {product: "Noiseless Mute Karaoke Microphone", price: 79.99}, {product: "Necktie Umbrella", price: 16.86}];
 
 
+
+function printOrder(items){
+ for(var i = 0; i<items.length; i++){
+  console.log(items[i]);
+  console.log(items[i].product);
+  console.log(items[i].price);
+
+  var orderBox = document.createElement('div');
+  orderBox.className = "orders";
+  myOrders.appendChild(orderBox);
+
+  var productBox = document.createElement('div');
+  productBox.className = "products";
+  productBox.innerHTML = items[i].product;
+  orderBox.appendChild(productBox);
+
+  var priceBox = document.createElement('div');
+  priceBox.className = "price";
+  priceBox.innerHTML = items[i].price;
+  productBox.appendChild(priceBox);
+}
+}
+printOrder(orders);
+
+var productList = document.getElementsByClassName('products');
+for(var i = 0; i<productList.length; i++){
+  productList[i].addEventListener('click', getList);
+
+  function getList(){
+    var showPrice = this.querySelectorAll('.price')[0];
+    console.log(this);
+    if(showPrice.style.display === 'none'){
+      showPrice.style.display = 'block';
+    }else{
+      showPrice.style.display = 'none';
+    }
+  }
+}
+
 };
 
 
